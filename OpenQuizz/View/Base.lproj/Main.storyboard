@@ -136,7 +136,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-O0-rCt">
-                                <rect key="frame" x="57" y="508" width="300" height="52"/>
+                                <rect key="frame" x="57" y="509" width="300" height="52"/>
                                 <color key="backgroundColor" red="0.3980596662" green="0.54443895819999999" blue="0.749047935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="DdP-Wf-paM"/>
@@ -171,7 +171,6 @@
                             <constraint firstItem="BYB-XX-ysb" firstAttribute="centerX" secondItem="1rj-lX-ApB" secondAttribute="centerX" id="XST-UK-C5d"/>
                             <constraint firstItem="Mod-O0-rCt" firstAttribute="centerX" secondItem="1rj-lX-ApB" secondAttribute="centerX" id="fHY-9S-wOi"/>
                             <constraint firstItem="BYB-XX-ysb" firstAttribute="top" secondItem="Mod-O0-rCt" secondAttribute="bottom" constant="60" id="kdU-5G-PsX"/>
-                            <constraint firstItem="BYB-XX-ysb" firstAttribute="top" secondItem="Mod-O0-rCt" secondAttribute="bottom" constant="61" id="uko-0x-nz7"/>
                             <constraint firstItem="Mod-O0-rCt" firstAttribute="height" secondItem="BYB-XX-ysb" secondAttribute="height" id="ySN-Pj-488"/>
                         </constraints>
                     </view>

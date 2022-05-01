@@ -27,4 +27,14 @@ extension ConfigViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.4,animations: {
+            self.view.frame.origin.y = -150
+        })
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.2,animations: {
+            self.view.frame.origin.y = 0
+        })
+    }
 }
