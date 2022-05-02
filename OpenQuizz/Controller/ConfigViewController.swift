@@ -11,14 +11,27 @@ import UIKit
 class ConfigViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
-    
+    @IBOutlet weak var playerName: UILabel!
     @IBAction func dismissKeyBoard(_ sender: UITapGestureRecognizer) {
         nameTextField.resignFirstResponder()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        playerName.text = GameConfig.sharedInstance.name
         // Do any additional setup after loading the view.
+    }
+    @IBAction func validate(_ sender: Any) {
+        createPlayer()
+    }
+    private func createPlayer() {
+        let name = nameTextField.text
+        GameConfig.sharedInstance.name = name
+        playerName.text = nameTextField.text
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "configToStart" {
+            let startVC = segue.destination as? StartViewController
+        }
     }
 }
 
@@ -29,7 +42,7 @@ extension ConfigViewController: UITextFieldDelegate {
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.4,animations: {
-            self.view.frame.origin.y = -150
+            self.view.frame.origin.y = -200
         })
     }
     func textFieldDidEndEditing(_ textField: UITextField) {

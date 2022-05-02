@@ -38,33 +38,41 @@
             <objects>
                 <viewController id="Kpd-e3-iBM" customClass="ConfigViewController" customModule="Labo_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1v-I2-dLD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Config" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYu-bQ-kUK">
-                                <rect key="frame" x="95" y="428.5" width="224.5" height="39.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39.5" id="W3b-2t-9BS"/>
-                                    <constraint firstAttribute="width" constant="224.5" id="u2m-S0-9Bc"/>
-                                </constraints>
+                                <rect key="frame" x="95" y="35" width="224.5" height="39.5"/>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGZ-9Z-raA">
-                                <rect key="frame" x="20" y="584" width="374" height="129"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129" id="2Oz-pe-cDe"/>
-                                    <constraint firstAttribute="width" constant="374" id="6fe-OF-qwa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <rect key="frame" x="74" y="696" width="266.5" height="42"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez un nom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ANL-oB-hNd">
-                                <rect key="frame" x="107" y="504" width="200.5" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jiz-YW-L9Y">
+                                <rect key="frame" x="107" y="631" width="200.5" height="45"/>
+                                <color key="backgroundColor" red="0.3980596662" green="0.54443895819999999" blue="0.749047935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="oLn-Ls-GqF"/>
+                                    <constraint firstAttribute="width" constant="200.5" id="ACd-bc-0Va"/>
+                                    <constraint firstAttribute="height" constant="45" id="oqX-NT-nO9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="28"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="validate:" destination="Kpd-e3-iBM" eventType="touchUpInside" id="mTc-hg-ajV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez un nom" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ANL-oB-hNd">
+                                <rect key="frame" x="107" y="566" width="200.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RdB-RE-R8G"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -77,13 +85,14 @@
                         <color key="backgroundColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="kGZ-9Z-raA" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="6Jo-oH-dNV"/>
-                            <constraint firstItem="ANL-oB-hNd" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="Dep-zq-tsu"/>
-                            <constraint firstItem="ZYu-bQ-kUK" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="HOn-cS-08t"/>
-                            <constraint firstItem="IZc-DO-OLG" firstAttribute="bottom" secondItem="kGZ-9Z-raA" secondAttribute="bottom" constant="100" id="Rlg-2g-Gtu"/>
-                            <constraint firstItem="ANL-oB-hNd" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="mmt-94-8Z5"/>
-                            <constraint firstItem="ANL-oB-hNd" firstAttribute="top" secondItem="ZYu-bQ-kUK" secondAttribute="bottom" constant="36" id="ocE-sb-gv9"/>
-                            <constraint firstItem="ZYu-bQ-kUK" firstAttribute="centerY" secondItem="a1v-I2-dLD" secondAttribute="centerY" id="vGb-MU-bI1"/>
+                            <constraint firstItem="Jiz-YW-L9Y" firstAttribute="top" secondItem="ANL-oB-hNd" secondAttribute="bottom" constant="20" id="2ak-d8-5Nf"/>
+                            <constraint firstItem="ZYu-bQ-kUK" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="8LK-04-dTr"/>
+                            <constraint firstItem="kGZ-9Z-raA" firstAttribute="top" secondItem="Jiz-YW-L9Y" secondAttribute="bottom" constant="20" id="Fap-iq-jPt"/>
+                            <constraint firstItem="ZYu-bQ-kUK" firstAttribute="top" secondItem="IZc-DO-OLG" secondAttribute="top" constant="35" id="Qbx-S4-qP9"/>
+                            <constraint firstItem="kGZ-9Z-raA" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="W52-jT-0ft"/>
+                            <constraint firstItem="ANL-oB-hNd" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="fdP-H2-a85"/>
+                            <constraint firstItem="IZc-DO-OLG" firstAttribute="bottom" secondItem="kGZ-9Z-raA" secondAttribute="bottom" constant="70" id="kQD-rG-5Nb"/>
+                            <constraint firstItem="Jiz-YW-L9Y" firstAttribute="centerX" secondItem="a1v-I2-dLD" secondAttribute="centerX" id="rrO-0t-6ig"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5t5-eM-Yeg" appends="YES" id="C9Z-gW-QyS"/>
@@ -92,8 +101,10 @@
                     <tabBarItem key="tabBarItem" title="Config" id="qux-G1-l5j">
                         <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="sfZ-Qh-UIZ"/>
                     <connections>
                         <outlet property="nameTextField" destination="ANL-oB-hNd" id="kt5-IC-OTl"/>
+                        <outlet property="playerName" destination="kGZ-9Z-raA" id="7g3-K6-mUc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnB-53-Pub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,11 +173,22 @@
                                     <segue destination="0S0-pK-3DY" kind="show" id="qkV-0t-Dng"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skl-Qb-D6N">
+                                <rect key="frame" x="74" y="276" width="266.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="isa-NQ-01Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gB3-z8-i9D"/>
                         <color key="backgroundColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="skl-Qb-D6N" firstAttribute="centerX" secondItem="1rj-lX-ApB" secondAttribute="centerX" id="2kY-7P-sBl"/>
                             <constraint firstItem="Mod-O0-rCt" firstAttribute="width" secondItem="BYB-XX-ysb" secondAttribute="width" id="7cu-4o-9Gq"/>
+                            <constraint firstItem="skl-Qb-D6N" firstAttribute="top" secondItem="gB3-z8-i9D" secondAttribute="top" constant="188" id="AV7-Af-kk1"/>
                             <constraint firstItem="gB3-z8-i9D" firstAttribute="bottom" secondItem="BYB-XX-ysb" secondAttribute="bottom" constant="140" id="X0H-CT-owv"/>
                             <constraint firstItem="BYB-XX-ysb" firstAttribute="centerX" secondItem="1rj-lX-ApB" secondAttribute="centerX" id="XST-UK-C5d"/>
                             <constraint firstItem="Mod-O0-rCt" firstAttribute="centerX" secondItem="1rj-lX-ApB" secondAttribute="centerX" id="fHY-9S-wOi"/>
@@ -175,6 +197,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="p4D-NM-DHC"/>
+                    <connections>
+                        <outlet property="playerName" destination="skl-Qb-D6N" id="73E-26-kYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGm-9Y-Y4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +307,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="p05-7C-n72"/>
+                                    <segue destination="Kpd-e3-iBM" kind="showDetail" id="Xfp-ns-1LL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioD-MK-v1W">
@@ -322,6 +348,9 @@
             <point key="canvasLocation" x="823" y="86"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xfp-ns-1LL"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon Correct" width="36" height="35"/>
         <image name="gamecontroller" catalog="system" width="128" height="80"/>

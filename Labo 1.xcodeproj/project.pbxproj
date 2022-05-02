@@ -10,6 +10,8 @@
 		045BA78D281E181C00AE37C3 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BA78C281E181C00AE37C3 /* StartViewController.swift */; };
 		045BA78F281E1BCA00AE37C3 /* GameStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BA78E281E1BCA00AE37C3 /* GameStatsViewController.swift */; };
 		045BA791281E245200AE37C3 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BA790281E245200AE37C3 /* ConfigViewController.swift */; };
+		045BA79E281F704800AE37C3 /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BA79D281F704800AE37C3 /* GameConfig.swift */; };
+		045BA7A0281F705700AE37C3 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BA79F281F705700AE37C3 /* GameStats.swift */; };
 		6A239FA72490FDED00BC9D36 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A239FA62490FDED00BC9D36 /* QuestionView.swift */; };
 		6A4D3091268D00B80082E101 /* Labo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D3090268D00B80082E101 /* Labo1Tests.swift */; };
 		6A773394248ACE7700BDB06F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A773393248ACE7700BDB06F /* AppDelegate.swift */; };
@@ -39,8 +41,10 @@
 		045BA78C281E181C00AE37C3 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		045BA78E281E1BCA00AE37C3 /* GameStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatsViewController.swift; sourceTree = "<group>"; };
 		045BA790281E245200AE37C3 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
-		045BA795281E40FB00AE37C3 /* Labo 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Labo 1.app"; path = "/Users/mac/Desktop/420-292_labo1/Labo1 - Départ/build/Debug-iphoneos/Labo 1.app"; sourceTree = "<absolute>"; };
-		045BA796281E40FB00AE37C3 /* Labo 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Labo 1Tests.xctest"; path = "/Users/mac/Desktop/420-292_labo1/Labo1 - Départ/build/Debug-iphoneos/Labo 1Tests.xctest"; sourceTree = "<absolute>"; };
+		045BA79B281F16E900AE37C3 /* Labo 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Labo 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045BA79C281F16E900AE37C3 /* Labo 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Labo 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045BA79D281F704800AE37C3 /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		045BA79F281F705700AE37C3 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
 		6A239FA62490FDED00BC9D36 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		6A4D3090268D00B80082E101 /* Labo1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labo1Tests.swift; sourceTree = "<group>"; };
 		6A4D3092268D00B80082E101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 			children = (
 				6A773392248ACE7700BDB06F /* OpenQuizz */,
 				6A4D308F268D00B80082E101 /* Labo 1Tests */,
+				045BA79B281F16E900AE37C3 /* Labo 1.app */,
+				045BA79C281F16E900AE37C3 /* Labo 1Tests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +116,8 @@
 				6A7733FF248E8B0300BDB06F /* Question.swift */,
 				6A773449248EAAD800BDB06F /* Game.swift */,
 				6A77344B248EABAD00BDB06F /* QuestionManager.swift */,
+				045BA79D281F704800AE37C3 /* GameConfig.swift */,
+				045BA79F281F705700AE37C3 /* GameStats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,7 +174,7 @@
 			);
 			name = "Labo 1Tests";
 			productName = "Labo 1Tests";
-			productReference = 045BA796281E40FB00AE37C3 /* Labo 1Tests.xctest */;
+			productReference = 045BA79C281F16E900AE37C3 /* Labo 1Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6A77338F248ACE7700BDB06F /* Labo 1 */ = {
@@ -184,7 +192,7 @@
 			);
 			name = "Labo 1";
 			productName = OpenQuizz;
-			productReference = 045BA795281E40FB00AE37C3 /* Labo 1.app */;
+			productReference = 045BA79B281F16E900AE37C3 /* Labo 1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -281,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A773398248ACE7700BDB06F /* ViewController.swift in Sources */,
+				045BA79E281F704800AE37C3 /* GameConfig.swift in Sources */,
 				045BA78D281E181C00AE37C3 /* StartViewController.swift in Sources */,
 				6A77344A248EAAD800BDB06F /* Game.swift in Sources */,
 				6A773400248E8B0300BDB06F /* Question.swift in Sources */,
@@ -290,6 +299,7 @@
 				6A773396248ACE7700BDB06F /* SceneDelegate.swift in Sources */,
 				045BA791281E245200AE37C3 /* ConfigViewController.swift in Sources */,
 				6A77344C248EABAD00BDB06F /* QuestionManager.swift in Sources */,
+				045BA7A0281F705700AE37C3 /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
