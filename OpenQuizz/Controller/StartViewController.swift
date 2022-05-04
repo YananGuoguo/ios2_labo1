@@ -11,11 +11,10 @@ import UIKit
 class StartViewController: UIViewController {
     @IBAction func unwindToStart(segue: UIStoryboardSegue) {}
     @IBOutlet weak var playerName: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        playerName.text = GameConfig.sharedInstance.name
         // Do any additional setup after loading the view.
+        playerName.text = GameConfig.sharedInstance.name
     }
     
 }

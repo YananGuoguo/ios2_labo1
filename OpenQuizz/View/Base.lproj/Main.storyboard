@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Config" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYu-bQ-kUK">
-                                <rect key="frame" x="95" y="35" width="224.5" height="39.5"/>
+                                <rect key="frame" x="89" y="35" width="236.5" height="47"/>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-O0-rCt">
-                                <rect key="frame" x="57" y="509" width="300" height="52"/>
+                                <rect key="frame" x="57" y="495" width="300" height="59"/>
                                 <color key="backgroundColor" red="0.3980596662" green="0.54443895819999999" blue="0.749047935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="DdP-Wf-paM"/>
@@ -162,7 +162,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-XX-ysb">
-                                <rect key="frame" x="57" y="621" width="300" height="52"/>
+                                <rect key="frame" x="57" y="614" width="300" height="59"/>
                                 <color key="backgroundColor" red="0.3980596662" green="0.54443895819999999" blue="0.749047935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -214,22 +214,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Stats" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmX-QA-zdh">
-                                <rect key="frame" x="110" y="428.5" width="194" height="39.5"/>
+                                <rect key="frame" x="107" y="108" width="200" height="40"/>
                                 <color key="tintColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="40J-8i-S3m"/>
+                                    <constraint firstAttribute="width" constant="200" id="aQv-7N-IHX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le nombre de partie jouées" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-Ll-B4E">
+                                <rect key="frame" x="25.5" y="228" width="363" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T6v-Ll-B4E" secondAttribute="height" multiplier="121:10" id="LuC-sU-tPJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwh-zu-6U3">
+                                <rect key="frame" x="74" y="338" width="266.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Z5b-jF-oyh"/>
+                                    <constraint firstAttribute="width" constant="266.5" id="ms4-tM-Rdh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le meilleur score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-Rn-zj4">
+                                <rect key="frame" x="92" y="460" width="230.5" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29.5" id="KO2-MM-5Vs"/>
+                                    <constraint firstAttribute="width" constant="230.5" id="jIH-7d-wsU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-Ps-uHe">
+                                <rect key="frame" x="74" y="569.5" width="266.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Dcx-xd-7xs"/>
+                                    <constraint firstAttribute="width" constant="266.5" id="xjL-5c-iUT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mDn-FY-bSH"/>
                         <color key="backgroundColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.33470040559999997" green="0.40630272029999998" blue="0.49779450889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OmX-QA-zdh" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="npW-7A-qci"/>
-                            <constraint firstItem="OmX-QA-zdh" firstAttribute="centerY" secondItem="Csb-WJ-78k" secondAttribute="centerY" id="qBW-Mc-03d"/>
+                            <constraint firstItem="NJm-Ps-uHe" firstAttribute="top" secondItem="g4v-Rn-zj4" secondAttribute="bottom" constant="80" id="2RG-Wt-RKg"/>
+                            <constraint firstItem="g4v-Rn-zj4" firstAttribute="top" secondItem="Zwh-zu-6U3" secondAttribute="bottom" constant="80" id="8GN-r7-SK3"/>
+                            <constraint firstItem="Zwh-zu-6U3" firstAttribute="top" secondItem="T6v-Ll-B4E" secondAttribute="bottom" constant="80" id="GGr-PO-Kne"/>
+                            <constraint firstItem="T6v-Ll-B4E" firstAttribute="top" secondItem="OmX-QA-zdh" secondAttribute="bottom" constant="80" id="efg-sP-1Og"/>
+                            <constraint firstItem="g4v-Rn-zj4" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="h58-fx-5wo"/>
+                            <constraint firstItem="OmX-QA-zdh" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="m2C-b3-je5"/>
+                            <constraint firstItem="T6v-Ll-B4E" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="ofk-gJ-7TI"/>
+                            <constraint firstItem="NJm-Ps-uHe" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="pvK-Xu-nt9"/>
+                            <constraint firstItem="Zwh-zu-6U3" firstAttribute="centerX" secondItem="Csb-WJ-78k" secondAttribute="centerX" id="wf5-Wb-JT1"/>
+                            <constraint firstItem="OmX-QA-zdh" firstAttribute="top" secondItem="mDn-FY-bSH" secondAttribute="top" constant="20" id="z4v-Fv-bfD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Statistics" id="Obs-pU-4SR"/>
+                    <connections>
+                        <outlet property="maxScore" destination="NJm-Ps-uHe" id="dif-qU-1AL"/>
+                        <outlet property="timesNumber" destination="Zwh-zu-6U3" id="J8d-98-hWE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ln-gG-m4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

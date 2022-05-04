@@ -14,7 +14,6 @@ class QuestionManager {
     static let shared = QuestionManager()
     private init() {}
 
-
     func get(completionHandler: @escaping ([Question]) -> ()) {
         let task = URLSession.shared.dataTask(with: self.url) { (data, response, error) in
             guard error == nil else {

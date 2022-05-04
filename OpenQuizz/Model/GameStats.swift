@@ -9,5 +9,13 @@
 import Foundation
 
 class GameStats {
-    
+    var playerArray = [String]()
+    var scoreArray = [Int]()
+    var times = 0
+    var maxScore = 0
+    func increment() {
+        self.times += 1
+    }
 }
+
+var gameStats = GameStats()

@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     var game = Game()
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -25,7 +24,6 @@ class ViewController: UIViewController {
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dragQuestionView(_:)))
         questionView.addGestureRecognizer(panGestureRecognizer)
     }
-    
     @objc func questionsLoaded() {
         activityIndicator.isHidden = true
         newGameButton.isHidden = false
@@ -98,6 +96,8 @@ class ViewController: UIViewController {
             questionView.title = game.currentQuestion.title
         case .over:
             questionView.title = "Game Over"
+            gameStats.increment()
+            gameStats.maxScore = gameStats.maxScore > game.score ? gameStats.maxScore : game.score
         }
         questionView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.5,
@@ -116,8 +116,4 @@ class ViewController: UIViewController {
         scoreLabel.text = "0 / 10"
         game.refresh()
     }
- 
 }
-
-
-

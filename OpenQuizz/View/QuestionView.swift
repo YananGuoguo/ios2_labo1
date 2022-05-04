@@ -22,7 +22,6 @@ class QuestionView: UIView {
             label.text = title
         }
     }
-    
     var style : Style = .standard {
         didSet {
             setStyle(style)

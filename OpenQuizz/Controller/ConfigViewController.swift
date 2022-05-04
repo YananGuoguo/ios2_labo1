@@ -26,12 +26,7 @@ class ConfigViewController: UIViewController {
     private func createPlayer() {
         let name = nameTextField.text
         GameConfig.sharedInstance.name = name
-        playerName.text = nameTextField.text
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "configToStart" {
-            let startVC = segue.destination as? StartViewController
-        }
+        playerName.text = name
     }
 }
 

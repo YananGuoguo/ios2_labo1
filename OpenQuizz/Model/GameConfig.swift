@@ -11,5 +11,5 @@ import Foundation
 class GameConfig {
     static let sharedInstance = GameConfig()
     private init() {}
-    var name: String? = "Default Player"
+    public var name: String? = "Default Player"
 }

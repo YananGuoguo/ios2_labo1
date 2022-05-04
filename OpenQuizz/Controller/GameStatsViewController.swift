@@ -12,11 +12,13 @@ class GameStatsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        timesNumber.text = String(gameStats.times)
+        maxScore.text = String(gameStats.maxScore)
 
         // Do any additional setup after loading the view.
     }
-    
-
+    @IBOutlet weak var timesNumber: UILabel!
+    @IBOutlet weak var maxScore: UILabel!
     /*
     // MARK: - Navigation
 
